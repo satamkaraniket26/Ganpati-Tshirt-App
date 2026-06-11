@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pending Recovery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>📞 Pending Recovery List</h1>
+
+<div class="summary">
+
+<div class="dashboard-grid">
+
+<div class="card">
+<h3>Collected</h3>
+<div id="collectedCount">0</div>
+</div>
+
+<div class="card">
+<h3>Pending</h3>
+<div id="pendingCount">0</div>
+</div>
+
+<div class="card">
+<h3>Revisit</h3>
+<div id="revisitCount">0</div>
+</div>
+
+<div class="card">
+<h3>Locked</h3>
+<div id="lockedCount">0</div>
+</div>
+
+<div class="card">
+<h3>Refused</h3>
+<div id="refusedCount">0</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Receipt</th>
+<th>Wing</th>
+<th>Room</th>
+<th>Name</th>
+<th>Status</th>
+<th>Collector</th>
+</tr>
+
+</thead>
+
+<tbody id="pendingBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+loadPendingVargani();
+</script>
+
+</body>
+</html>

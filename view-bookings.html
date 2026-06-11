@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <div class="header">
+    <h1>🙏 Ganpati Mandal T-Shirt Booking 2026 🙏</h1>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Bookings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>All Bookings</h1>
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Name / Mobile / Booking ID"
+onkeyup="applyFilters()">
+
+<select id="statusFilter" onchange="applyFilters()">
+    <option value="All">All</option>
+    <option value="Paid">Paid</option>
+    <option value="Unpaid">Unpaid</option>
+</select>
+
+<h3>Total Records: <span id="totalRecords">0</span></h3>
+
+<h3>Total Qty: <span id="summaryQty">0</span></h3>
+
+<h3>Total Amount: ₹<span id="summaryAmount">0</span></h3>
+
+<br><br>
+
+<table id="bookingTable" class="booking-table">
+
+<thead>
+<tr>
+<th>Booking ID</th>
+<th>Name</th>
+<th>Mobile</th>
+<th>Qty</th>
+<th>Amount</th>
+<th>Status</th>
+<th>Created By</th>
+<th>Actions</th>
+</tr>
+</thead>
+
+<tbody id="bookingBody">
+
+</tbody>
+
+</table>
+
+<br>
+
+<button onclick="window.location.href='dashboard.html'">
+Back To Dashboard
+</button>
+
+<script src="app.js"></script>
+
+<script>
+checkLogin();
+loadBookings();
+</script>
+
+</body>
+</html>

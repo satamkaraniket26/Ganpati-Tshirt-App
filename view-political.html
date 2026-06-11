@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Political Donations</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<h1>🏛 Political Donations</h1>
+
+<input
+type="text"
+id="politicalSearch"
+placeholder="Search Leader / Party"
+onkeyup="loadPolitical()">
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Receipt</th>
+<th>Leader</th>
+<th>Party</th>
+<th>Amount</th>
+<th>Collector</th>
+</tr>
+
+</thead>
+
+<tbody id="politicalBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+loadPolitical();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>View Vargani</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🏠 Vargani Records</h1>
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Name / Room / Building"
+onkeyup="loadVargani()">
+
+<select
+id="statusFilter"
+onchange="loadVargani()">
+
+<option value="">All</option>
+<option>Collected</option>
+<option>Pending</option>
+<option>Revisit</option>
+<option>House Closed</option>
+
+</select>
+
+<div class="table-container">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Receipt</th>
+<th>Wing</th>
+<th>Room</th>
+<th>Name</th>
+<th>Amount</th>
+<th>Status</th>
+<th>Collector</th>
+</tr>
+
+</thead>
+
+<tbody id="varganiBody">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+loadVargani();
+</script>
+
+</body>
+</html>
