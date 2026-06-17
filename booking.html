@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>T-Shirt Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🙏 Ganpati Mandal T-Shirt Booking 2026 🙏</h1>
+</div>
+
+<h3>Customer Details</h3>
+
+<input
+    id="name"
+    type="text"
+    placeholder="Customer Name">
+
+<br><br>
+
+<input
+    id="mobile"
+    type="tel"
+    maxlength="10"
+    placeholder="Mobile Number">
+
+<br><br>
+
+<h3>T-Shirt Sizes</h3>
+
+<div id="sizeContainer"></div>
+
+<button
+    type="button"
+    onclick="addSizeRow()">
+    + Add Size
+</button>
+
+<br><br>
+
+<h3>
+Total Qty :
+<span id="totalQty">0</span>
+</h3>
+
+<h3>
+Amount :
+<span id="amount">₹0</span>
+</h3>
+
+<br>
+
+<select id="paymentMode">
+    <option value="UPI">UPI</option>
+    <option value="Cash">Cash</option>
+</select>
+
+<br><br>
+
+<select id="paymentStatus">
+    <option value="Paid">Paid</option>
+    <option value="Unpaid">Unpaid</option>
+</select>
+
+<br><br>
+
+<button onclick="saveBooking()">
+    Save Booking
+</button>
+
+<br><br>
+
+<button onclick="window.location.href='dashboard.html'">
+    Back To Dashboard
+</button>
+
+<script src="app.js"></script>
+
+<script>
+checkLogin();
+addSizeRow();
+</script>
+
+</body>
+</html>
