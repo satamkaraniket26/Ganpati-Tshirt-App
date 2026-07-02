@@ -1,0 +1,1131 @@
+/* ==========================
+   ROOT VARIABLES
+========================== */
+
+:root{
+
+    --primary:#C65D00;
+    --primary-hover:#A94F00;
+
+    --background:#F5F7FA;
+
+    --card:#FFFFFF;
+
+    --border:#E5E7EB;
+
+    --text:#1F2937;
+
+    --text-light:#6B7280;
+
+    --success:#16A34A;
+
+    --danger:#DC2626;
+
+    --radius:14px;
+
+    --shadow:0 4px 14px rgba(0,0,0,.06);
+
+}
+
+/* ==========================
+   MAIN CONTAINER
+========================== */
+
+.container{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    padding:25px;
+
+}
+
+
+/* ==========================
+   GLOBAL
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#F5F7FA;
+    color:#1F2937;
+    padding:20px;
+    font-size:16px;
+}
+
+h1{
+    text-align:center;
+    color:#ff6b00;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+h2{
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+h3{
+    margin-bottom:10px;
+    font-size:20px;
+}
+
+/* ==========================
+   LOGIN PAGE
+========================== */
+
+.login-page{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#F5F7FA;
+
+    padding:20px;
+
+}
+
+.login-card{
+
+    width:100%;
+    max-width:400px;
+
+    background:#FFFFFF;
+
+    padding:40px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+    transition:.25s;
+
+}
+
+.login-logo{
+
+    width: 90px;;
+
+    height: 90px;;
+
+    margin:0 auto 24px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#FFFFFF;
+
+    border:1px solid var(--border);
+
+}
+
+.login-logo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.login-card h2{
+
+    margin-bottom:8px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#1F2937;
+
+    line-height:1.4;
+
+}
+
+.login-subtitle{
+
+    margin-bottom:30px;
+
+    color:#6B7280;
+
+    font-size:15px;
+
+}
+
+.login-card input{
+
+    width:100%;
+
+    height:48px;
+
+    padding:0 14px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.2s;
+
+    box-sizing:border-box;
+
+}
+
+.login-card input:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(198,93,0,.10);
+
+}
+
+.login-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+}
+
+.form-group{
+
+    margin-bottom:20px;
+
+    text-align:left;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.primary-btn{
+
+    width:100%;
+
+    height: 52px;;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.primary-btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+input,
+select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:10px;
+
+    background:white;
+
+    transition:.2s;
+
+    font-size:15px;
+
+}
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(198,93,0,.10);
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#ff6b00;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+button:hover{
+
+    opacity:.95;
+}
+/* ==========================
+   PROFESSIONAL HEADER
+========================== */
+
+.header-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#FFFFFF;
+
+    padding:24px 32px;
+
+    border-radius:20px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.06);
+
+    margin-bottom:35px;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.header-logo{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:white;
+
+    border:3px solid #F5F5F5;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.header-logo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.header-text h1{
+
+    margin:0;
+
+    font-size:20px;
+
+    color:#1F2937;
+
+    font-weight:700;
+
+}
+
+.header-text p{
+
+    margin-top:6px;
+
+    color:#6B7280;
+
+    font-size:15px;
+
+}
+
+.header-right{
+
+    text-align:right;
+
+}
+
+.header-right span{
+
+    display:block;
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+
+.header-right strong{
+
+    font-size:20px;
+
+    color:#1F2937;
+
+}
+
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+.stat-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+    transition:.25s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.card-label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    color:#6B7280;
+
+    text-transform:uppercase;
+
+}
+
+.stat-card h1{
+
+    margin-top:15px;
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+.page-title{
+
+    margin-bottom:20px;
+
+}
+
+.page-title h2{
+
+    font-size:28px;
+
+    margin:0;
+
+    color:#1F2937;
+
+}
+
+.page-title p{
+
+    margin-top:6px;
+
+    color:#6B7280;
+
+}
+
+.action-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+.action-btn{
+
+    width:100%;
+
+    height:72px;
+
+    background:#FFFFFF;
+
+    color:#1F2937;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.action-btn:hover{
+
+    background:#FAFAFA;
+
+    border-color:#C65D00;
+
+    color:#C65D00;
+
+}
+
+.logout-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:30px;
+
+}
+
+.logout-btn{
+
+    width:220px;
+
+    height:60px;
+
+    background:#C65D00;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:all .25s ease;
+
+}
+
+.logout-btn:hover{
+
+    background:#A94F00;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+/* ==========================
+   BOOKING PAGE
+========================== */
+
+.form-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.section-heading{
+
+    font-size:22px;
+
+    color:#1F2937;
+
+    margin-bottom:20px;
+
+}
+
+.booking-container{
+
+    width:100%;
+
+    max-width:500px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:15px;
+
+    padding-bottom:180px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.10);
+}
+
+/* ==========================
+   SIZE BUTTONS
+========================== */
+
+.size-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:12px;
+
+    margin-top:15px;
+}
+
+.size-btn{
+
+    width:100%;
+
+    margin:0;
+
+    padding:18px 0;
+
+    background:#ff7a00;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    font-size:20px;
+
+    font-weight:bold;
+}
+
+.selected-size{
+
+    background:#28a745 !important;
+
+    border:2px solid #1e7e34;
+}
+
+/* ==========================
+   SELECTED SIZE CARDS
+========================== */
+
+.selected-card{
+
+    background:white;
+
+    margin-top:10px;
+
+    padding:12px;
+
+    border-radius:15px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+}
+
+.selected-card button{
+
+    width:auto;
+
+    margin:0 3px;
+
+    padding:6px 12px;
+}
+
+/* ==========================
+   TOTAL BOX
+========================== */
+
+.total-box{
+
+    background:#fff3e6;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-weight:bold;
+
+    margin-top:15px;
+}
+
+/* ==========================
+   STICKY PAYMENT BAR
+========================== */
+
+.sticky-summary{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    border-top:3px solid #ff7a00;
+
+    box-shadow:0 -4px 15px rgba(0,0,0,.15);
+
+    padding:12px;
+
+    z-index:999;
+}
+
+.mobile-summary{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+}
+
+.mobile-total{
+
+    text-align:center;
+
+    font-size:26px;
+
+    font-weight:bold;
+
+    color:#ff6600;
+
+    margin-bottom:10px;
+}
+
+.payment-btn{
+
+    width:100%;
+
+    background:#28a745;
+
+    color:white;
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+/* ==========================
+   PROFESSIONAL TABLE
+========================== */
+
+.table-container{
+
+    overflow-x:auto;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:16px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#FFFFFF;
+
+}
+
+thead{
+
+    background:#F9FAFB;
+
+}
+
+th{
+
+    padding:16px;
+
+    color:#374151;
+
+    font-weight:600;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #F3F4F6;
+
+    text-align:center;
+
+}
+
+tbody tr:hover{
+
+    background:#FAFAFA;
+
+}
+
+/* ==========================
+   SUMMARY CARDS
+========================== */
+
+.summary{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:10px;
+
+    margin-bottom:15px;
+}
+
+.summary-card{
+
+    background:#FFF8F2;
+
+    border:1px solid #F3D5B5;
+
+    border-radius:16px;
+
+    padding:20px 25px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.summary-card span{
+
+    display:block;
+
+    color:#6B7280;
+
+    font-size:14px;
+
+}
+
+.summary-card strong{
+
+    font-size:32px;
+
+    color:#C65D00;
+
+}
+
+.button-row{
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:25px;
+
+}
+
+/* ==========================
+   FILTER GRID
+========================== */
+
+.filter-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:20px;
+
+}
+
+.secondary-btn{
+
+    background:#FFFFFF;
+
+    color:#1F2937;
+
+    border:1px solid #D1D5DB;
+
+    height:52px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.secondary-btn:hover{
+
+    background:#F9FAFB;
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:600px){
+
+    body{
+        padding:10px;
+        font-size:18px;
+    }
+
+    h1{
+        font-size:30px;
+    }
+
+    h2{
+        font-size:24px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    input,
+    select{
+        font-size:18px;
+        padding:14px;
+    }
+
+    button{
+        font-size:18px;
+        padding:15px;
+    }
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .summary{
+        grid-template-columns:1fr;
+    }
+
+    .booking-container{
+        padding:15px;
+        padding-bottom:180px;
+        border-radius:15px;
+    }
+
+    .size-btn{
+        font-size:20px;
+        padding:18px 0;
+    }
+
+    .card-value{
+        font-size:34px;
+    }
+
+    .mobile-total{
+        font-size:30px;
+    }
+
+    table{
+        font-size:15px;
+    }
+}
+
+.header-card{
+
+    flex-wrap:wrap;
+
+}
+
+@media(max-width:768px){
+
+.header-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.header-right{
+
+    text-align:left;
+
+}
+
+.header-left{
+
+    gap:15px;
+
+}
+
+.header-logo{
+
+    width:60px;
+
+    height:60px;
+
+}
+
+.header-text h1{
+
+    font-size:18px;
+
+}
+
+.filter-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==========================
+   CARD HOVER EFFECTS
+========================== */
+
+.stat-card,
+.form-card,
+.summary-card,
+.action-btn,
+.login-card{
+
+    transition:all 0.25s ease;
+
+}
+
+.stat-card:hover,
+.form-card:hover,
+.summary-card:hover,
+.action-btn:hover,
+.login-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 28px rgba(0,0,0,0.10);
+
+}
