@@ -682,23 +682,51 @@ function resendReceipt(bookingId){
     return;
   }
 
+  let sizes = "";
+
+  if(Number(booking[4]) > 0) sizes += "Size 18 - " + booking[4] + "\n";
+  if(Number(booking[5]) > 0) sizes += "Size 20 - " + booking[5] + "\n";
+  if(Number(booking[6]) > 0) sizes += "Size 22 - " + booking[6] + "\n";
+  if(Number(booking[7]) > 0) sizes += "Size 24 - " + booking[7] + "\n";
+  if(Number(booking[8]) > 0) sizes += "Size 26 - " + booking[8] + "\n";
+  if(Number(booking[9]) > 0) sizes += "Size 28 - " + booking[9] + "\n";
+  if(Number(booking[10]) > 0) sizes += "Size 30 - " + booking[10] + "\n";
+  if(Number(booking[11]) > 0) sizes += "Size 32 - " + booking[11] + "\n";
+  if(Number(booking[12]) > 0) sizes += "Size 34 - " + booking[12] + "\n";
+  if(Number(booking[13]) > 0) sizes += "Size 36 - " + booking[13] + "\n";
+  if(Number(booking[14]) > 0) sizes += "Size 38 - " + booking[14] + "\n";
+  if(Number(booking[15]) > 0) sizes += "Size 40 - " + booking[15] + "\n";
+  if(Number(booking[16]) > 0) sizes += "Size 42 - " + booking[16] + "\n";
+  if(Number(booking[17]) > 0) sizes += "Size 44 - " + booking[17] + "\n";
+  if(Number(booking[18]) > 0) sizes += "Size 46 - " + booking[18] + "\n";
+  if(Number(booking[19]) > 0) sizes += "Size 48 - " + booking[19] + "\n";
+
   const msg =
 
 `श्री. सिद्धिविनायक सार्वजनिक गणेशोत्सव मंडळ
-        ॥ मीरारोडचा महाराजा ॥
-       स्थापना २००६ | वर्ष २१ वे.
+॥ मीरारोडचा महाराजा ॥
+स्थापना २००६ | वर्ष २१ वे.
 
 Booking ID: ${booking[0]}
 
 Name: ${booking[2]}
 
-T-Shirts: ${booking[20]}
+Mobile: ${booking[3]}
+
+Booked Sizes:
+${sizes}
+
+T-Shirt Qty: ${booking[20]}
 
 ID Cards: ${booking[21]}
 
 Amount: ₹${booking[22]}
 
+Payment Mode: ${booking[23]}
+
 Payment Status: ${booking[24]}
+
+Booked By: ${booking[25]}
 
 धन्यवाद ||`;
 
