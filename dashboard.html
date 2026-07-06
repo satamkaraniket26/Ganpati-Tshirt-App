@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ganpati Mandal Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="checkLogin();loadDashboard();">
+
+<div class="container">
+
+    <div class="header-card">
+
+    <div class="header-left">
+
+        <div class="header-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="header-text">
+
+            <h1>श्री सिद्धिविनायक सार्वजनिक गणेशोत्सव मंडळ</h1>
+
+            <p>T-Shirt Management System 2026</p>
+
+        </div>
+
+    </div>
+
+    <div class="header-right">
+
+        <span>Welcome</span>
+
+        <strong id="loggedUser"></strong>
+
+    </div>
+
+</div>
+
+    <div class="page-title">
+
+        <h2>Dashboard</h2>
+
+        <p>Overview of T-Shirt bookings</p>
+
+    </div>
+
+    <div class="dashboard-grid">
+
+        <div class="stat-card">
+
+            <span class="card-label">Today's Orders</span>
+
+            <h1 id="todayOrders">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span class="card-label">Total Orders</span>
+
+            <h1 id="totalOrders">0</h1>
+
+        </div>
+
+        <div class="stat-card">
+
+            <span class="card-label">Total T-Shirts Sold</span>
+
+            <h1 id="totalQty">0</h1>
+
+        </div>
+
+        <div class="stat-card"> 
+
+            <span class="card-label">Total Collection</span>
+
+            <h1 id="totalCollection">₹0</h1>
+
+        </div>
+
+    </div>
+
+    <div class="page-title">
+
+        <h2>Quick Actions</h2>
+
+        <p>Select an option below</p>
+
+    </div>
+
+    <div class="action-grid">
+
+    <button class="action-btn"
+        onclick="window.location.href='booking.html'">
+        New Booking
+    </button>
+
+    <button class="action-btn"
+        onclick="window.location.href='view-bookings.html'">
+        View Bookings
+    </button>
+
+    <button class="action-btn"
+        onclick="window.location.href='size-report.html'">
+        Size Report
+    </button>
+
+    <button class="action-btn"
+        onclick="downloadCSV()">
+        Download Excel
+    </button>
+
+</div>
+
+<div class="logout-row">
+
+    <button class="logout-btn"
+        onclick="logout()">
+
+        Logout
+
+    </button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

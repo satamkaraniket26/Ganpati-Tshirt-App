@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Size Wise Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="checkLogin();loadSizeReport();">
+
+<div class="container">
+
+    <!-- Header -->
+
+    <div class="header-card">
+
+        <div class="header-left">
+
+            <div class="header-logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+
+            <div class="header-text">
+                <h1>श्री सिद्धिविनायक सार्वजनिक गणेशोत्सव मंडळ</h1>
+                <p>T-Shirt Management System 2026</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Page Title -->
+
+    <div class="page-title">
+
+        <h2>Size Wise Report</h2>
+
+        <p>Total T-Shirts booked for each size</p>
+
+    </div>
+
+    <!-- Report Table -->
+
+    <div class="form-card">
+
+        <h3 class="section-heading">
+
+            T-Shirt Size Summary
+
+        </h3>
+
+        <div class="table-container">
+
+            <table class="booking-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Size</th>
+
+                        <th>Total Booked</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="sizeReportBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <div class="button-row">
+
+        <button
+            class="secondary-btn"
+            onclick="window.location.href='dashboard.html'">
+
+            Back to Dashboard
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
